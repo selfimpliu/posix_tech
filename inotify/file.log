@@ -1,0 +1,3 @@
+2016-12-23 21:00:03,OPEN,testdir/file,
+2016-12-23 21:00:03,CLOSE_WRITE:CLOSE,testdir/file,
+2016-12-23 21:00:03,MODIFY,testdir/file,
