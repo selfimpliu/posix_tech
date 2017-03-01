@@ -1,0 +1,120 @@
+execve("/usr/bin/flock", ["flock", "mylockfile", "-c", "sleep 10"], [/* 36 vars */]) = 0
+brk(0)                                  = 0x134f000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea0341e000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=202398, ...}) = 0
+mmap(NULL, 202398, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea033ec000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\36\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2098910, ...}) = 0
+mmap(NULL, 3965536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fea02e33000
+mprotect(0x7fea02ff2000, 2093056, PROT_NONE) = 0
+mmap(0x7fea031f1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7fea031f1000
+mmap(0x7fea031f7000, 16992, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fea031f7000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea033eb000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea033e9000
+arch_prctl(ARCH_SET_FS, 0x7fea033e9740) = 0
+mprotect(0x7fea031f1000, 16384, PROT_READ) = 0
+mprotect(0x7fea0341f000, 4096, PROT_READ) = 0
+munmap(0x7fea033ec000, 202398)          = 0
+brk(0)                                  = 0x134f000
+brk(0x1370000)                          = 0x1370000
+open("/usr/lib64/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2502, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea0341d000
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2502
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fea0341d000, 4096)            = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=316, ...}) = 0
+mmap(NULL, 316, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea0341d000
+close(3)                                = 0
+open("/usr/lib64/gconv/gconv-modules.cache", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/gconv/gconv-modules", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=56302, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fea0341c000
+read(3, "# GNU libc iconv configuration.\n"..., 4096) = 4096
+read(3, "lias\tCSISO141JUSIB1002//\tJUS_I.B"..., 4096) = 4096
+read(3, "odule\t\tcost\nalias\tISO-IR-110//\t\t"..., 4096) = 4096
+read(3, "9-14//\nalias\tL8//\t\t\tISO-8859-14/"..., 4096) = 4096
+read(3, "CSEBCDICES//\t\tEBCDIC-ES//\nalias\t"..., 4096) = 4096
+read(3, "IBM284//\nalias\tEBCDIC-CP-ES//\t\tI"..., 4096) = 4096
+read(3, "ias\t864//\t\t\tIBM864//\nalias\tCSIBM"..., 4096) = 4096
+read(3, "lias\tCSIBM939//\t\tIBM939//\nmodule"..., 4096) = 4096
+read(3, "alias\tcsGB2312//\t\tEUC-CN//\nalias"..., 4096) = 4096
+read(3, "//\t\tISO-2022-CN-EXT//\nmodule\tISO"..., 4096) = 4096
+read(3, "st\nalias\tISO-IR-55//\t\tISO_5428//"..., 4096) = 4096
+read(3, "\tARMSCII-8//\t\tARMSCII-8\t1\n\n#\tfro"..., 4096) = 4096
+brk(0x1391000)                          = 0x1391000
+read(3, "2//\t\tIBM1112\t\t1\n\n#\tfrom\t\t\tto\t\t\tm"..., 4096) = 4096
+read(3, "module\tIBM9448//\t\tINTERNAL\t\tIBM9"..., 4096) = 3054
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fea0341c000, 4096)            = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=23, ...}) = 0
+mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea0341c000
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=57, ...}) = 0
+mmap(NULL, 57, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea0341b000
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=162, ...}) = 0
+mmap(NULL, 162, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea0341a000
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=82, ...}) = 0
+mmap(NULL, 82, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea03419000
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=34, ...}) = 0
+mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea03418000
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=57, ...}) = 0
+mmap(NULL, 57, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea03417000
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=290, ...}) = 0
+mmap(NULL, 290, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea03416000
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2214, ...}) = 0
+mmap(NULL, 2214, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea03415000
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=54, ...}) = 0
+mmap(NULL, 54, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea03414000
+close(3)                                = 0
+open("/usr/lib64/locale/zh_CN.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/locale/zh_CN.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=257188, ...}) = 0
+mmap(NULL, 257188, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fea033aa000
+close(3)                                = 0
+open("mylockfile", O_RDONLY|O_CREAT|O_NOCTTY, 0666) = 3
+flock(3, LOCK_EX)                       = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [CHLD], SA_RESTORER|SA_RESTART, 0x7fea02e69e50}, {SIG_DFL, [], 0}, 8) = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fea033e9a10) = 8461
+wait4(8461, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 8461
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8461, si_status=0, si_utime=0, si_stime=0} ---
+exit_group(0)                           = ?
++++ exited with 0 +++
